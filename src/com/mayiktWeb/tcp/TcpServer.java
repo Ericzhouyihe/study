@@ -10,6 +10,7 @@ public class TcpServer {
         // 创建serverSocket
         ServerSocket serverSocket = new ServerSocket(8090);
         // 监听客户端数据
+        System.out.println("服务器正在等待客户端数据...");
         Socket socket = serverSocket.accept();
         // 获取到客户端发送的数据
         InputStream inputStream = socket.getInputStream();
