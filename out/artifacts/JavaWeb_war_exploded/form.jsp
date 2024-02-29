@@ -1,0 +1,32 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html ; charset=UTF-8">
+    <title>请注册</title>
+</head>
+<body>
+    <h1>请输入您的登录信息</h1>
+    <hr>
+    <form action="/JavaWeb/RequestParamsServlet" method="POST">
+        用户名:<input type="text" name="name" placeholder="请输入用户名">
+        <br>
+        密&nbsp;&nbsp;&nbsp;码:<input type="password" name="password" placeholder="请输入密码">
+        <br>
+        <br>
+
+        爱好:
+        <input type="checkbox" name="hobby" value="sing">唱
+        <input type="checkbox" name="hobby" value="dance">跳
+        <input type="checkbox" name="hobby" value="rap">rap
+        <input type="checkbox" name="hobby" value="basketball">篮球
+        <br>
+        <br>
+
+        <!-- 按钮:input button -->
+        <input type="submit" value="提交">
+        <button type="reset">重置</button>
+    </form>
+</body>
+</html>

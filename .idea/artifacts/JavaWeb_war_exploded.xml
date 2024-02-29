@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JavaWeb:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaWeb_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JavaWeb" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="D:/javaWeb/apache-tomcat-9.0.71/lib/servlet-api.jar" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="JavaWeb/web/Web" />
+    </root>
+  </artifact>
+</component>
