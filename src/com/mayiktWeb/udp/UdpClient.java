@@ -23,7 +23,7 @@ public class UdpClient {
 
             //封装发送的数据包
             DatagramPacket dp = new DatagramPacket(bytes, bytes.length,
-                    InetAddress.getByName("mayikt.server.com"), 8080);
+                    InetAddress.getByName("127.0.0.1"), 8080);
             //开始发送数据包
             ds.send(dp);
             System.out.println("数据发送成功...");
