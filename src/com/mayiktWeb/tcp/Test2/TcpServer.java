@@ -23,6 +23,7 @@ public class TcpServer {
             Socket socket = serverSocket.accept();
 
             //不允许直接单独new线程  后续用线程池来维护线程 --java进阶
+            //TODO (一般不允许直接new线程,要采取线程池进行优化,后续java进阶再来修改)
             new Thread(new Runnable() {
                 @Override
                 public void run() {
